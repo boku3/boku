@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>検索結果</h1>
+        <!-- <h2>＜検索条件＞</h2>
+        <p>毛色：{{c}}</p>
+        <p>年齢：{{a}}</p>
+        <p>サクラ：{{e}}</p>
+        <h2>で検索しています</h2> -->
+    </header>
+    <p>---------------------------</p>
+    {% for neko in s_list %}
+    <p>投稿NO：{{neko["id"]}}</p>
+    <p>お名前：{{neko["name"]}}</p>
+    <p>投稿日：{{neko["date"]}}</p>
+    <p>{{neko["imgpath"]}}</p>
+    <p>コメント：{{neko["comment"]}}</p>
+    <p>毛色：{{neko["color"]}}</p>
+    <p>年齢：{{neko["age"]}}</p>
+    <p>サクラ：{{neko["ear"]}}</p>
+    <p>---------------------------</p>
+    {% endfor %}
+
+    <div class="menu_bar">
+        <a href="/noraneko">💭</a>
+        <a href="/search">🔍</a>
+        <a href="/top">🌎</a>
+        <a href="/maigoneko">H</a>
+        <a href="/regist">🖊</a>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>投稿の内容を入力してね！</h2>
+    <div class="add">
+        <form action="" method="POST">
+            <ul>
+                <li>画像を追加
+                    <input type="text" name="imgpath">
+                </li>
+                <!-- <img src="../static/img/cat-4132916_1280.jpg" alt=""> -->
+                <li>名前
+                    <input type="text" name="name">
+                </li>
+                <li>ノラ・迷子
+                    <select name="genre">
+                        <option value="">--- 選択 ---</option>
+                        <option name="nora" value="ノラ">ノラ</option>
+                        <option name="maigo" value="迷子">迷子</option>
+                    </select>
+                </li>
+                <li>毛色
+                    <select name="color">
+                        <option value="">--- 選択 ---</option>
+                        <option name="brown" value="茶">茶</option>
+                        <option name="white" value="白">白</option>
+                        <option name="black" value="黒">黒</option>
+                    </select>
+                </li>
+                <li>とし
+                    <select name="age">
+                        <option value="">--- 選択 ---</option>
+                        <option name="kid" value="仔猫">仔猫</option>
+                        <option name="adult" value="成猫">成猫</option>
+                        <option name="old" value="老猫">老猫</option>
+                    </select>
+                </li>
+                <li>サクラ
+                    <select name="ear">
+                        <option value="">------- 選択 -------</option>
+                        <option name="cut" value="サクラ">サクラ</option>
+                        <option name="nocut" value="サクラじゃない">サクラじゃない</option>
+                    </select>
+                </li>
+                <li>位置</li>
+                <li>＜コメント入力欄＞</li>
+                <textarea name="comment" placeholder="コメント" cols="30" rows="10"></textarea>
+                <li><input type="submit" value="投稿"></li>
+            </ul>
+        </form>
+    </div>
+
+    <div class="menu_bar">
+        <a href="/noraneko">💭</a>
+        <a href="/search">🔍</a>
+        <a href="/top">🌎</a>
+        <a href="/maigoneko">H</a>
+        <a href="/regist">🖊</a>
+    </div>
+
+</body>
+
+</html>
+
+<!-- 完成！ -->

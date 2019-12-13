@@ -1,0 +1,28 @@
+body {
+    background-color: #ffffdf;
+}
+
+ul {
+    list-style: none;
+}
+
+.header ul {
+    text-align: center;
+    border: 1px solid black;
+}
+
+
+.header li {
+    display: inline-block;
+    color: red;
+    margin: 0 15px;
+}
+
+.header h1 {
+    text-align: center;
+}
+
+/* 
+.contents {
+    border: 1px solid black;
+} */
